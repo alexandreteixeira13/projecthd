@@ -9,6 +9,10 @@
 :root {
     --color-light: #f4f4f4;
     --color-orange: #ff6600;
+    --color-dark: #222222;
+    --spacing-sm: 10px;
+    --spacing-md: 20px;
+    --spacing-lg: 30px;
 }
 
 html {
@@ -17,6 +21,7 @@ html {
 
 body {
     font-family: "Quicksand", sans-serif;
+    background-color: var(--color-dark);
 }
 
 /* Formatações para elementos que sempre se repetem  */
@@ -54,12 +59,12 @@ ul, ol {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-inline: 20px;
+    padding-inline: var(--spacing-md);
 }
 
 .hero-menu {
     display: flex;
-    gap: 20px;
+    gap: var(--spacing-md);
 }
 
 .cta{
@@ -67,7 +72,7 @@ ul, ol {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 30px;
+    gap: var(--spacing-lg);
     flex-direction: column;
     text-align: center;
 }
@@ -89,7 +94,7 @@ ul, ol {
     border: 2px solid var(--color-orange);
     background-color: var(--color-orange);
     border-radius: 9px;
-    padding: 10px 30px;
+    padding: var(--spacing-sm) var(--spacing-lg);
     transition: 0.5s;
 }
 
@@ -119,6 +124,45 @@ ul, ol {
 }
 
 
-.motos, .conheca, .galeria {
+.conheca, .galeria {
     height: 100dvh;
 }
+
+
+
+.motos{
+    height: 100dvh;
+    padding: var(--spacing-md);
+    background-color: var(--color-dark);
+    width: 90%;
+    margin: var(--spacing-sm) auto;
+        color: var(--color-light);
+}
+
+.color-orange{
+    color: var(--color-orange);
+}
+
+.motos h2{
+    font-size: 10vmin;
+    text-align: center; 
+}
+
+.grid-motos{
+    width: 100%;
+    display: flex;
+    gap: var(--spacing-lg);
+}
+
+.moto-item{
+
+    width: 30%;
+
+}
+
+.moto-item img{
+
+    width: 100%;
+
+}
+
